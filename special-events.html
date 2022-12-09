@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="special events page">
+    <title>Special Events</title>
+    <script defer src="script.js"></script>
+    <!-- LINK FOR MAIN STYLING -->
+    <link rel="stylesheet" href="./css/styles.css">¨
+    <link rel="stylesheet" href="./css/exhibitions.css">
+    <!-- LINK FOR PAGE SPECIFIC STYLING -->
+    <link rel="stylesheet" href="./css/special-events.css">
+</head>
+<body>
+    <main>
+        <section class="">
+            <h1>Special Events</h1>
+            <h2>News</h2>
+        </section>
+        <section class="gallery__section gallery__section--special-events">
+            <div class="gallery__card gallery__card--visiting-professor" id="gallery__card--visiting-professor">
+                <!-- <h2>visiting-professor</h2> -->
+                <img src="./images/celso-405219.jpg" alt="Picture-of-planets">
+                <div class="gallery__overlay">
+                    <div class="overlay__details overlay__details--visiting-professor">
+                        <h2 class="overlay__title">Visiting Professor of Aeronautics</h2>
+                        <span class="overlay__text overlay__text--visiting-professor">
+                            <p>It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology will be delivering 3 lectures on the development of aeronautics and where the future lies in this exciting ‘space’.</p>
+                        </span>
+                        <span class="overlay__CTA">
+                            <p>It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology will be delivering 3 lectures on the development of aeronautics and where the future lies in this exciting ‘space’.</p>
+                            <button class="CTA__button" onclick="changeStyleVisitingProfessor()">Learn More</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__card gallery__card--museum-night" id="gallery__card--museum-night">
+                <img src="./images/museum-people_resized.jpg" alt="People in a museum">
+                <div class="gallery__overlay">
+                    <div class="overlay__details overlay__details--museum-night">
+                        <h2 class="overlay__title">Night in the Museum</h2>
+                        <span class="overlay__text overlay__text--museum-night">
+                        </span>
+                        <span class="overlay__CTA">
+                            <p>Get your family together for an exciting night in the museum as you sleep over beside dinosaurs and science displays. Bring your own sleeping bag and get ready to rough it as we go exploring the wonders of science.</p>
+                            <button class="CTA__button" onclick="changeStyleMuseumNight()">Learn More</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__card gallery__card--energetica" id = "gallery__card--energetica">
+                <img src="./images/wind-turbines.avif" alt="Pictures-of-wind-turbines">
+                <div class="gallery__overlay">
+                    <div class="overlay__details overlay__details--energetica">
+                        <h2 class="overlay__title">Energetica Exhibition on Loan</h2>
+                        <span class="overlay__text overlay__text--energetica" >
+                        </span>
+                        <span class="overlay__CTA">
+                            <p>On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming to the Community Science Museum.</p>
+                            <br>
+                            <p>It’s a series of installations that allow visitors to experience the power of the elements as we harness them. From solar energy powering lighting, to ‘Wind Island’ that shows how turbines are able to use and control wind to create power.</p>
+                            <button class="CTA__button" onclick="changeStyleEnergetica()">Learn More</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

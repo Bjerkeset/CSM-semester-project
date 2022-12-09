@@ -1,0 +1,36 @@
+@media (min-width: 860px) {
+  .gallery__card--visiting-professor {
+    grid-column: span 6;
+    grid-row: span 2;
+  }
+  .gallery__card--energetica {
+    grid-column: span 6;
+    grid-row: span 2;
+  }
+  .gallery__card--museum-night {
+    grid-column: span 6;
+    grid-row: span 2;
+  }
+
+  .gallery__section--special-events {
+    grid-gap: 150px 0;
+  }
+}
+
+.gallery__section--special-events .overlay__CTA {
+  font-size: var(--defult-p-size);
+}
+
+.gallery__section--special-events .gallery__overlay {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2;
+}
+
+.gallery__section--special-events .overlay__title {
+  opacity: 1;
+  /* transform: scale(1.3); */
+  visibility: visible;
+}

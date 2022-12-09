@@ -1,0 +1,198 @@
+@media (min-width: 860px) {
+  /* SIZING OF GALLERY CARD */
+  .gallery__card--cosmology {
+    grid-column: span 5;
+    grid-row: span 2;
+  }
+  .gallery__card--evolution {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .gallery__card--ecology {
+    grid-column: span 3;
+    grid-row: span 2;
+  }
+  .gallery__card--biology-and-medicine {
+    grid-column: span 3;
+    grid-row: span 2;
+  }
+  .gallery__card--robotics-and-ai {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  /* DEFULT GRID TEMPLATE FOR THREE PAGES */
+  .gallery__section {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    display: grid;
+    grid-auto-flow: dense;
+    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 0.5fr));
+    grid-auto-rows: 150px;
+  }
+
+  /* TOGGLE ON OF FUNCTION ./SCRIPT.JS */
+  .gallery_card--expand {
+    grid-column: span 5;
+    grid-row: span 5;
+  }
+}
+
+.gallery__card {
+  position: relative;
+  background-color: #d7d7d8;
+  overflow: hidden;
+  max-height: 450px;
+  transition: var(--defult-transition);
+}
+
+.gallery__overlay {
+  position: absolute;
+  background-color: #fafafaf1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: var(--defult-transition);
+  z-index: 100;
+}
+
+.gallery_card--expand .gallery__overlay,
+.gallery__card:hover .gallery__overlay {
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  opacity: 1;
+}
+
+.gallery__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+.gallery__card:hover img {
+  transform: scale(1.3);
+}
+
+.overlay__details {
+  text-align: center;
+  padding: 1rem;
+}
+
+.overlay__title {
+  margin-bottom: 8px;
+  font-size: var(--defult-h2-size);
+  font-weight: 600;
+  position: relative;
+  top: -10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+
+.gallery_card--expand .overlay__title,
+.gallery__card:hover .overlay__title {
+  top: 0px;
+  opacity: 1;
+  transform: scale(1.3);
+  visibility: visible;
+  transform: all 0.5 ease;
+}
+
+.overlay__CTA {
+  position: relative;
+  bottom: -5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.gallery__card:hover .overlay__CTA {
+  bottom: 0;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s 0.2s ease;
+}
+
+.CTA__button {
+  font-size: var(--defult-button-size);
+  /* font-weight: 400; */
+  background-color: var(--button-learn-more-color);
+  color: var(--black);
+  padding: 10px;
+  margin-top: 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  /* transition: var(--defult-transition); */
+}
+.CTA__button:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+  transition: var(--defult-transition);
+}
+
+/* CHANGE THE BUTTON CONTENT WITHOUT JS */
+.gallery_card--expand .CTA__button {
+  visibility: hidden;
+}
+.gallery_card--expand .CTA__button:after {
+  content: "Show Less";
+  visibility: visible;
+  display: block;
+}
+
+/* TOGGLE ON/OFF FUNCTION ./SCRIPT.JS */
+.gallery_card--expand {
+  height: 1000px;
+  max-height: 1000px;
+}
+
+.overlay__text {
+  /* visibility: hidden; */
+  opacity: 0;
+  position: absolute;
+  transition: var(--defult-transition);
+}
+
+.gallery_card--expand .overlay__text {
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+  /* display: flex; */
+  font-size: var(--defult-p-size);
+  text-align: left;
+  line-height: var(--defult-line-height);
+}
+
+.gallery_card--expand .overlay__text p {
+  padding: 1rem calc(0.5rem + 3vw);
+}
+
+.gallery_card--expand .overlay__title {
+  padding-bottom: 5rem;
+}
+
+/* TO MAKE P STYLING MODULAR ACROSS PAGES */
+/* .gallery_card--expand .overlay__text p:nth-child(1) {
+  padding: 5rem 5rem 0 5rem;
+}
+
+.gallery_card--expand .overlay__text p:nth-child(2) {
+  padding-top: 1rem 5rem 
+  background-color: aqua;
+}
+.gallery_card--expand .overlay__text p:nth-child(3) {
+  padding: 5rem 5rem 0 5rem;
+}
+
+.gallery_card--expand .overlay__text p:nth-child(4) {
+  padding-top: 0rem;
+  background-color: aqua;
+} */
