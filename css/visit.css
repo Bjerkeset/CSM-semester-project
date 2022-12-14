@@ -1,0 +1,111 @@
+.body__visit-page,
+body {
+  background-color: var(--background-orange);
+}
+
+.container {
+  margin: 1rem;
+  border: 2px solid;
+  background-color: lightslategray;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5vw;
+  /* flex-wrap: wrap; */
+}
+
+/* all paragraphs on the page */
+.visit__p {
+  font-size: var(--defult-p-size);
+}
+/* all h2 and h1's on the page */
+.visit-h2 {
+  font-size: 3rem;
+}
+.visit__main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section {
+  margin-top: calc(50px + 3vw);
+  min-width: 319px;
+}
+.admission__section {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  border: 2px solid;
+}
+.admission-details__container {
+  padding: 5vw;
+}
+.admission-details__child {
+}
+.admission-details__child__h1 {
+  padding-bottom: 50px;
+  font-size: var(--defult-h1-size) 3rem;
+}
+.admission-details__child__p {
+  max-width: 750px;
+  font-size: var(--defult-p-size);
+}
+
+/* form */
+.admission-booking__container {
+  padding-top: 100px;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.admission-booking__form {
+  display: flex;
+  flex-direction: column;
+}
+.admission-form,
+.admission-form input {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 75px;
+}
+/*//////////////// visit section ///////////////////////////// */
+
+.visit__section {
+  border: 2px solid;
+  width: 50vw;
+}
+
+
+.visit-location__container {
+}
+
+.visit-hours__container {
+}
+
+.visit-details {
+}
+
+
+/* /////////STORE SECTION//////// */
+.store__section {
+  /* background-color: lightblue; */
+  display: flex;
+  /* max-width: 300px; */
+  /* min-width: 319px; */
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.shop__container {
+  max-width: 500px;
+}
+
+.cafe__container {
+  max-width: 500px;
+}
+
+.accessibility__container {
+  max-width: 500px;
+}

@@ -1,5 +1,5 @@
+//////////EXHIBITIONS.HTML///////////////
 //Toggle learn more button
-
 function changeStyleCosmology() {
     var element = document.getElementById("gallery__card--cosmology");
     element.classList.toggle("gallery_card--expand");
@@ -20,6 +20,33 @@ function changeStyleBiologyAndMedicine() {
     var element = document.getElementById("gallery__card--biology-and-medicine");
     element.classList.toggle("gallery_card--expand");
  }
+//////////SPECIAL-EVENTS.HTML///////////////
+function changeStyleVisitingProfessor() {
+    var element = document.getElementById("gallery__card--visiting-professor");
+    element.classList.toggle("gallery_card--expand");
+}
+function changeStyleMuseumNight() {
+    var element = document.getElementById("gallery__card--museum-night");
+    element.classList.toggle("gallery_card--expand");
+}
+function changeStyleEnergetica() {
+    var element = document.getElementById("gallery__card--energetica");
+    element.classList.toggle("gallery_card--expand");
+}
+//////////SPECIAL-EVENTS.HTML///////////////
+function changeStyleKids() {
+    var element = document.getElementById("gallery__card--kids");
+    element.classList.toggle("gallery_card--expand");
+}
+function changeStyleTeachers() {
+    var element = document.getElementById("gallery__card--teachers");
+    element.classList.toggle("gallery_card--expand");
+}
+function changeStyleResearchers() {
+    var element = document.getElementById("gallery__card--researchers");
+    element.classList.toggle("gallery_card--expand");
+}
+
 
 
 

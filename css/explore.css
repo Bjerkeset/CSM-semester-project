@@ -1,0 +1,103 @@
+@media (min-width: 860px) {
+  .gallery__card--kids {
+    grid-column: span 6;
+    grid-row: span 3;
+  }
+  .gallery__card--researchers {
+    grid-column: span 6;
+    grid-row: span 3;
+  }
+  .gallery__card--teachers {
+    grid-column: span 6;
+    grid-row: span 3;
+  }
+  .gallery_card--expand {
+    grid-column: span 6;
+    grid-row: span 6;
+  }
+}
+
+.body--explore {
+  background-color: #c9c9ee;
+}
+
+.gallery_card--expand .overlay__CTA p {
+  visibility: hidden;
+  position: absolute;
+}
+.overlay__CTA p {
+  font-size: var(--defult-p-size);
+  position: relative;
+}
+
+/* centers button */
+.gallery__section--explore .gallery_card--expand .overlay__title,
+.gallery__section--explore .gallery_card--expand .CTA__button {
+  padding-bottom: 0rem;
+  padding: 0;
+  margin-top: 0;
+}
+.internal-gallery__wrap {
+  display: flex;
+  justify-content: center;
+  /* padding-top: 2rem; */
+}
+.gallery_card--expand .internal-gallery__grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(10, 0.5fr);
+  grid-auto-rows: 0.5fr;
+  grid-gap: 20px;
+  max-width: 500px;
+  justify-self: center;
+}
+
+/* .gallery_card--expand .internal-gallery__child {
+  grid-column: span 1;
+  grid-row: span 1;
+} */
+
+.gallery_card--expand .gallery__child--one {
+  grid-column: span 3;
+  grid-row: span 3;
+}
+.gallery_card--expand .gallery__child--two {
+  grid-column: span 4;
+  grid-row: span 3;
+}
+.gallery_card--expand .gallery__child--three {
+  grid-column: span 3;
+  grid-row: span 3;
+}
+.gallery_card--expand .gallery__child--four {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.gallery_card--expand .gallery__child--five {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+.gallery_card--expand .gallery__child--six {
+  grid-column: span 5;
+  grid-row: span 2;
+}
+
+.internal-gallery__child img {
+  position: absolute;
+  visibility: hidden;
+}
+
+.gallery_card--expand .internal-gallery__child img {
+  visibility: visible;
+  position: relative;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.gallery_card--expand .gallery__overlay {
+  background-color: grey;
+}

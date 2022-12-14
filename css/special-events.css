@@ -1,3 +1,39 @@
+.title__image__container--special-events {
+  background-image: url(../images/david-barajas-q_klhRcIdbY-unsplash.jpg);
+}
+
+.body__special-events {
+  background-color: #d78a76;
+}
+
+.overlay__CTA p {
+  visibility: hidden;
+  position: absolute;
+}
+
+.gallery_card--expand .overlay__CTA p {
+  visibility: visible;
+  position: relative;
+}
+
+.gallery__section--special-events .gallery_card--expand {
+  max-height: 500px;
+}
+.gallery__section--special-events .gallery__overlay {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 1;
+  /* backdrop-filter: blur(6px); */
+  background: none;
+  background-color: rgba(219, 233, 238, 0.1);
+}
+
+.gallery__section--special-events .gallery__overlay:hover {
+  background-color: rgba(219, 233, 238, 0.9);
+}
+
 @media (min-width: 860px) {
   .gallery__card--visiting-professor {
     grid-column: span 6;
@@ -15,22 +51,30 @@
   .gallery__section--special-events {
     grid-gap: 150px 0;
   }
-}
 
-.gallery__section--special-events .overlay__CTA {
-  font-size: var(--defult-p-size);
-}
+  .gallery__section--special-events .overlay__CTA {
+    font-size: var(--defult-p-size);
+  }
 
-.gallery__section--special-events .gallery__overlay {
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.2;
-}
+  .gallery__overlay {
+  }
 
-.gallery__section--special-events .overlay__title {
-  opacity: 1;
-  /* transform: scale(1.3); */
-  visibility: visible;
+  .gallery__section--special-events .overlay__title {
+    opacity: 1;
+    /* transform: scale(1.3); */
+    visibility: visible;
+  }
+
+  .gallery__section--special-events .overlay__CTA {
+    opacity: 1;
+    visibility: visible;
+  }
+  .overlay__CTA p {
+    visibility: visible;
+    position: relative;
+  }
+  .overlay__CTA button {
+    visibility: hidden;
+    position: absolute;
+  }
 }

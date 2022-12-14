@@ -8,27 +8,46 @@
     <title>Special Events</title>
     <script defer src="script.js"></script>
     <!-- LINK FOR MAIN STYLING -->
+    <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/styles.css">¨
     <link rel="stylesheet" href="./css/exhibitions.css">
     <!-- LINK FOR PAGE SPECIFIC STYLING -->
     <link rel="stylesheet" href="./css/special-events.css">
 </head>
-<body>
+<body class="body__special-events ">
+    <header>
+        <div class="navbar__container">
+            <nav class="navbar__menu">
+                <a class="navbar__menu__branding" href=""><img src="" alt=""></a>
+                <ul class="navbar__menu__ul">
+                    <a href="./index.html"><li>Home</li></a>
+                    <a href="./explore.html"><li>Explore</li></a>
+                    <a href="./exhibitions.html"><li>Exhibition</li></a>
+                    <a href="./special-events.html"><li>Special Events</li></a>
+                    <a href="./visit.html"><li>Visit</li></a>
+                </ul>
+                <div class="hamburger">
+                    <span class="hamburger__bar"></span>
+                    <span class="hamburger__bar"></span>
+                    <span class="hamburger__bar"></span>
+                </div>
+            </nav>
+        </div>            
+    </header>
     <main>
-        <section class="">
-            <h1>Special Events</h1>
-            <h2>News</h2>
+        <section class="title__section">
+            <div class="title__image__container title__image__container--special-events"></div>
+            <div class="title__h1__container">
+                <h1>Special Events</h1>
+            </div>
         </section>
         <section class="gallery__section gallery__section--special-events">
             <div class="gallery__card gallery__card--visiting-professor" id="gallery__card--visiting-professor">
                 <!-- <h2>visiting-professor</h2> -->
-                <img src="./images/celso-405219.jpg" alt="Picture-of-planets">
+                <img src="./images/dom-fou-YRMWVcdyhmI-unsplash_resized.jpg" alt="Picture-of-planets">
                 <div class="gallery__overlay">
                     <div class="overlay__details overlay__details--visiting-professor">
                         <h2 class="overlay__title">Visiting Professor of Aeronautics</h2>
-                        <span class="overlay__text overlay__text--visiting-professor">
-                            <p>It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology will be delivering 3 lectures on the development of aeronautics and where the future lies in this exciting ‘space’.</p>
-                        </span>
                         <span class="overlay__CTA">
                             <p>It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology will be delivering 3 lectures on the development of aeronautics and where the future lies in this exciting ‘space’.</p>
                             <button class="CTA__button" onclick="changeStyleVisitingProfessor()">Learn More</button>

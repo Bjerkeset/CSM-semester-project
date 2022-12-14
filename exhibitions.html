@@ -1,18 +1,45 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/exhibitions.css">
-    <script defer src="script.js"></script>
     <title>Exhibition Spaces</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- LINK FOR MAIN STYLING -->
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- LINK FOR PAGE SPECIFIC STYLING -->
+    <link rel="stylesheet" href="./css/exhibitions.css">
 </head>
-<body>
+<body class="body--exhibitions">
+    <header>
+        <div class="navbar__container">
+            <nav class="navbar__menu">
+                <a class="navbar__menu__branding" href=""><img src="" alt=""></a>
+                <ul class="navbar__menu__ul">
+                    <a href="./index.html"><li>Home</li></a>
+                    <a href="./explore.html"><li>Explore</li></a>
+                    <a href="./exhibitions.html"><li>Exhibition</li></a>
+                    <a href="./special-events.html"><li>Special Events</li></a>
+                    <a href="./visit.html"><li>Visit</li></a>
+                </ul>
+                <div class="hamburger">
+                    <span class="hamburger__bar"></span>
+                    <span class="hamburger__bar"></span>
+                    <span class="hamburger__bar"></span>
+                </div>
+            </nav>
+        </div>            
+    </header>
     <main>
-        <section class="">
-            <h1>Exhibition Spaces</h1>
+        <section class="title__section">
+            <div class="title__image__container title__image__container--exhibition"></div>
+            <div class="title__h1__container">
+                <h1>Exhibition Spaces</h1>
+            </div>
         </section>
         <section class="gallery__section gallery__section--exhibitions">
             <div class="gallery__card gallery__card--cosmology" id = "gallery__card--cosmology">

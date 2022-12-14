@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="explore page">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- LINK FOR MAIN STYLING -->
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/exhibitions.css">
+    <!-- LINK FOR PAGE SPECIFIC STYLING -->
+    <link rel="stylesheet" href="./css/explore.css">
+</head>
+<body class="body--explore">
+    <header>
+        <div class="navbar__container">
+            <nav class="navbar__menu">
+                <a class="navbar__menu__branding" href=""><img src="" alt=""></a>
+                <ul class="navbar__menu__ul">
+                    <a href="./index.html"><li>Home</li></a>
+                    <a href="./explore.html"><li>Explore</li></a>
+                    <a href="./exhibitions.html"><li>Exhibition</li></a>
+                    <a href="./special-events.html"><li>Special Events</li></a>
+                    <a href="./visit.html"><li>Visit</li></a>
+                </ul>
+                <div class="hamburger">
+                    <span class="hamburger__bar"></span>
+                    <span class="hamburger__bar"></span>
+                    <span class="hamburger__bar"></span>
+                </div>
+            </nav>
+        </div>            
+    </header>
+    <main>
+        <section class="title__section">
+            <div class="title__image__container title__image__container--explore"></div>
+            <div class="title__h1__container">
+                <h1>Explore</h1>
+            </div>
+        </section>
+        <section class="gallery__section gallery__section--explore">
+            <div class="gallery__card gallery__card--kids" id = "gallery__card--kids">
+                <img src="./images/learn-2405206_1920.jpg" alt="Picture-of-kid">
+                <div class="gallery__overlay">
+                    <div class="overlay__details overlay__details--kids">
+                        <h2 class="overlay__title">For Kids</h2>
+                        <span class="overlay__text overlay__text--kids">
+                            <p>You can learn about Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth? Our exhibits are designed to be accessible for interested minds, so make sure you come ready to learn and explore.</p>
+                        </span>
+                        <div class="internal-gallery__wrap">
+                            <div class="internal-gallery__grid">
+                                <div class="internal-gallery__child gallery__child--one "><img src="./images/reading-2762010_1280.jpg" alt="Picture-of-reading-kid"></div>
+                                <div class="internal-gallery__child gallery__child--two"><img src="./images/mammoth-1257288_1920.jpg" alt="Picture-of-mammoth"></div>
+                                <div class="internal-gallery__child gallery__child--three"><img src="./images/k-mitch-hodge-qykIxd4vNEw-unsplash_resized.jpg" alt="Picture-of-dragon"></div>
+                                <div class="internal-gallery__child gallery__child--four"><img src="./images/markus-spiske-197281.jpg" alt="Picture-of-mammoth"></div>
+                                <div class="internal-gallery__child gallery__child--five"><img src="./images/ball-1010907_1920.jpg" alt="Picture-of-mammoth"></div>
+                                <div class="internal-gallery__child gallery__child--six"><img src="./images/name_-gravity-_AdUs32i0jc-unsplash.jpg" alt="Picture-of-mammoth"></div>
+                            </div>
+                        </div>
+                        <span class="overlay__CTA">
+                            <p>Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to see and do.</p>
+                            <button class="CTA__button" onclick="changeStyleKids()">Learn More</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__card gallery__card--teachers" id = "gallery__card--teachers">
+                <img src="./images/teachers_resized.jpg" alt="Picture-of-teachers">
+                <div class="gallery__overlay">
+                    <div class="overlay__details overlay__details--teachers">
+                        <h2 class="overlay__title">Teachers</h2>
+                        <span class="overlay__text overlay__text--teachers">
+                            <p>Explore the wonders of our cosmos. Our fantastic exhibition, 'The Sky Above Us', explores the night sky and what we can see and know about the universe around us. We'll locate the various constellations and galaxies that can be seen and learn a bit about the early navigators who used the stars to travel by.</p>
+                            <p>Follow the journey of our solar exploration: from early Arab traders, to Galileo's telescope, to the latest exploration of the planets in our solar system.</p> 
+                        </span>
+                        <span class="overlay__CTA">
+                            <button class="CTA__button" onclick="changeStyleTeachers()">Learn More</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__card gallery__card--researchers" id = "gallery__card--researchers">
+                <img src="./images/billetto-editorial-334686.jpg" alt="Picture-of-researchers">
+                <div class="gallery__overlay">
+                    <div class="overlay__details overlay__details--researchers">
+                        <h2 class="overlay__title">For Researchers</h2>
+                        <span class="overlay__text overlay__text--researchers">
+                            <p>Are you looking to get involved with our team of researchers and academics? Our museum offers various ways for you to use our resources and contribute towards them. We have online records, laboratory space, and a working relationship with a number of universities around the country.</p>
+                        </span>
+                        <span class="overlay__CTA">
+                            <button class="CTA__button" onclick="changeStyleResearchers()">Learn More</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__container">
+            <div class="footer__top__container">
+                <div>
+                    <h2>Navigation</h2>
+                    <ul class="footer__page-links footer__all-links">
+                    <a href="./index.html"><li>Home</li></a>
+                    <a href="./explore.html"><li>Explore</li></a>
+                    <a href="./exhibitions.html"><li>Exhibitions</li></a>
+                    <a href="./special-events.html"><li>Special Events</li></a>
+                    <a href="./visit.html"><li>Visit</li></a>
+                </ul>
+                </div>
+                <div class="footer__links-and-newsletter__container">
+                    <ul class=" footer__sosial-links footer__all-links">
+                        <a href="https://twitter.com/home"><li><i class="fa-brands fa-twitter"></i></li></a>
+                        <a href="https://www.facebook.com/"><li><i class="fa-brands fa-facebook"></i></li></a>
+                        <a href="https://www.youtube.com/"><li><i class="fa-brands fa-youtube"></i></li></a>
+                        <a href="https://www.tiktok.com/tag/tictioc"><li><i class="fa-brands fa-tiktok"></i></li></a>
+                        <a href="https://www.instagram.com/"><li><i class="fa-brands fa-square-instagram"></i></li></a>
+                    </ul>
+                    <div class="footer__newsletter">
+                        <form action="#">
+                            <label for="email">Join our Newsfeed</label>
+                            <input type="email" id="email" name="email--newsfeed" placeholder="Email" required>
+                            <input type="submit" id="submit" name="submit--newsfeed" value="Join" >
+                        </form>
+                    </div>
+                </div>
+                <ul class="footer__contact-details">
+                    <li><a href="tel:0047 90645718"><i class="fa-solid fa-phone"></i> +47 543 23 563 </a></li>
+                    <li><a href="https://www.google.com/maps?q=m%C3%B8lleparken+4&sxsrf=ALiCzsZm4VwpzZvOg9GrNCYRmF1z_-wLUA:1670319878543&iflsig=AJiK0e8AAAAAY48dFtjR8mpHtFGbGQNS6E3aDfBdt2TM&gs_lcp=Cgdnd3Mtd2l6EAMYADIHCCMQsAIQJzIHCAAQgAQQDTIHCAAQgAQQDTIHCAAQgAQQDTIHCAAQgAQQDTIHCAAQgAQQDTIHCAAQgAQQDTIHCAAQgAQQDTIHCAAQgAQQDTINCC4QgAQQxwEQrwEQDToECCMQJzoICAAQgAQQsQM6CwguELEDEIMBENQCOhEILhCABBCxAxCDARDHARDRAzoLCAAQgAQQsQMQgwE6BQguEIAEOgUIABCABDoLCC4QgAQQxwEQrwE6DgguELEDEIMBEMcBENEDOgsILhCvARDHARCABFAAWJYTYPcmaABwAHgAgAFwiAHyBpIBAzkuMZgBAKABAQ&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjt04-82uT7AhVFR_EDHaihDecQ_AUoAXoECAIQAw"><i class="fa-solid fa-building-columns"></i> Mølleparken 4 0459 Oslo</a></li>
+                    <li> <a href="mailto: contact@CSM.com"><i class="fa-solid fa-envelope"></i> contact@CSM.com</a></li>
+                </ul>
+            </div>
+            <div class="footer__low__container">
+                <div class="footer__copyright">
+                    <h2>
+                        ©copyright™
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
