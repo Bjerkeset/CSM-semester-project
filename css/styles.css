@@ -60,25 +60,28 @@ a:visited {
   /* transition: background 2s ease; */
   height: fit-content;
   background-color: var(--background-blue);
+  background-color: var(--background-orange);
+
   /* width: 100vw; */
   margin: 0;
 }
 
-.homepage {
+/* .homepage {
   display: flex;
   justify-content: center;
-}
+} */
 
-.homepage__section {
+/* .homepage__section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+} */
 .hero__section {
-  background-color: var(--background-orange);
+  /* background-color: var(--background-orange); */
   display: flex;
   flex-direction: row;
   height: 100vh;
+  background-color: var(--background-orange);
   justify-content: center;
   /* gap: 10vw; */
   align-items: center;
@@ -88,13 +91,13 @@ a:visited {
   font-size: calc(0.5rem + 2.5vw);
 }
 .hero__img-container {
-  /* background-color: lightgreen; */
+  background-color: lightgreen;
   box-sizing: content-box;
 }
 .hero__img {
-  width: 40vw;
+  width: auto;
   min-width: 320px;
-  height: auto;
+  height: 850px;
   /* object-fit: contain;
   aspect-ratio: 1/2;
   mix-blend-mode: color-burn; */
@@ -109,38 +112,41 @@ a:visited {
 .intro__container {
   opacity: 1;
   display: grid;
-  justify-content: center;
   height: 4000px;
   /* grid-auto-flow: dense; */
-  width: 50vw;
-  min-width: 325px;
-  grid-gap: 2vw;
-  grid-template-columns: repeat(10, minmax(100px, 1fr));
+  justify-content: center;
+  width: 60vw;
+  min-width: 320px;
+  grid-gap: 1vw;
+  grid-template-columns: repeat(10, minmax(10px, 1fr));
   /* grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); */
-  grid-template-rows: repeat(auto-fill, 10vw);
+  grid-template-rows: repeat(auto-fill, 5vw);
   grid-auto-rows: 10px;
   grid-auto-flow: row;
 }
 .intro__item {
   /* background-color: lightsteelblue; */
-  box-shadow: rgba(100, 100, 111, 1) 0px 7px 29px 0px;
+  /* box-shadow: rgba(100, 100, 111, 1) 0px 7px 29px 0px; */
 }
 .intro__text {
-  background-color: lightsteelblue;
-  font-size: 2.5vw;
+  /* background-color: lightsteelblue; */
+  font-size: 2vw;
   border-radius: 5px;
   padding: 1rem;
   /* overflow: hidden; */
 }
 .intro__text p {
   /* background-color: rgba(211, 211, 211, 0.2); */
+  font-weight: 600;
 }
-.intro__image {
+.intro__image img {
   overflow: hidden;
   transition: var(--defult-transition);
 }
-.intro__image:hover {
+.intro__image img:hover {
   scale: 1.025;
+  filter: brightness(1);
+  box-shadow: rgba(100, 100, 111, 1) 0px 7px 29px 0px;
 }
 .intro__image img {
   width: 100%;
@@ -148,10 +154,21 @@ a:visited {
   max-height: 100%;
   object-fit: cover;
   object-position: 50% 50%;
+  filter: brightness(0.8);
+  /* filter: blur(5px); */
+  /* filter: brightness(0.4); */
+  /* filter: contrast(200%); */
+  /* filter: drop-shadow(16px 16px 20px blue); */
+  /* filter: grayscale(50%); */
+  /* filter: hue-rotate(90deg); */
+  /* filter: invert(75%); */
+  /* filter: opacity(25%); */
+  /* filter: saturate(30%); */
+  /* filter: sepia(60%); */
 }
 
 .intro__text--one {
-  grid-row: span auto;
+  grid-row: span 2;
   grid-column: span 10;
 }
 .intro__text--two {
@@ -159,21 +176,21 @@ a:visited {
   grid-column: span 6;
 }
 .intro__text--three {
-  grid-row: span 3;
+  grid-row: span 5;
   grid-column: span 4;
 }
 .intro__text--four {
-  grid-row: span 4;
-  grid-column: span 4;
+  grid-row: span 3;
+  grid-column: span 5;
 }
 .intro__text--five {
-  grid-row: span 4;
-  grid-column: span 4;
+  grid-row: span 3;
+  grid-column: span 10;
 }
 
 .intro__image--one {
-  grid-row: span 2;
-  grid-column: span 2;
+  grid-row: span 3;
+  grid-column: span 4;
 }
 .intro__image--two {
   grid-row: span 2;
@@ -184,20 +201,20 @@ a:visited {
   grid-column: span 6;
 }
 .intro__image--four {
-  grid-row: span 2;
-  grid-column: span 2;
-}
-.intro__image--five {
-  grid-row: span 2;
-  grid-column: span 2;
-}
-.intro__image--six {
-  grid-row: span 2;
+  grid-row: span 5;
   grid-column: span 4;
 }
+.intro__image--five {
+  grid-row: span 4;
+  grid-column: span 5;
+}
+.intro__image--six {
+  grid-row: span 5;
+  grid-column: span 5;
+}
 .intro__image--seven {
-  grid-row: span 2;
-  grid-column: span 2;
+  grid-row: span 5;
+  grid-column: span 6;
 }
 .intro__image--eight {
   grid-row: span 2;
@@ -205,11 +222,11 @@ a:visited {
 }
 .intro__image--nine {
   grid-row: span 2;
-  grid-column: span 2;
+  grid-column: span 6;
 }
 .intro__image--ten {
   grid-row: span 2;
-  grid-column: span 2;
+  grid-column: span 5;
 }
 .intro__image--eleven {
   grid-row: span 2;
