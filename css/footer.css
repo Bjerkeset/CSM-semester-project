@@ -8,6 +8,9 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  padding-top: 20px;
+}
+.footer__top__container h2 {
 }
 .footer__all-links {
   display: flex;

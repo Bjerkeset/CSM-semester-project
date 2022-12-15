@@ -1,6 +1,29 @@
 /*THIS FILE IS THE DEFULT STYLING FOR EXPLORE.HTML AND SPECIAL-EVENTS.HTML,
 AND MAIN STYLING FOR EXHIBITIONS.HTML  */
 
+.body--exhibitions {
+  background-color: #2d93ad;
+}
+
+.title__section {
+  padding: 10vw 0 5vw 0;
+}
+
+.title__image__container {
+  background-image: url(../images/exhibition-1863344_1920.jpg);
+  height: calc(50px + 20vw);
+  background-size: 100%;
+  background-position: top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.title__h1__container {
+  padding-top: 5vw;
+  display: flex;
+  font-size: var(--defult-h1-size);
+  justify-content: center;
+}
+
 @media (min-width: 860px) {
   /* SIZING OF GALLERY CARD */
   .gallery__card--cosmology {
@@ -42,29 +65,6 @@ AND MAIN STYLING FOR EXHIBITIONS.HTML  */
     grid-column: span 5;
     grid-row: span 6;
   }
-}
-
-.body--exhibitions {
-  background-color: #2d93ad;
-}
-
-.title__section {
-  padding: 10vw 0 5vw 0;
-}
-
-.title__image__container {
-  background-image: url(../images/exhibition-1863344_1920.jpg);
-  height: calc(50px + 20vw);
-  background-size: 100%;
-  background-position: top;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-.title__h1__container {
-  padding-top: 5vw;
-  display: flex;
-  font-size: var(--defult-h1-size);
-  justify-content: center;
 }
 
 .gallery__card {
