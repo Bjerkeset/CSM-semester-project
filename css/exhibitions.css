@@ -80,9 +80,13 @@ AND MAIN STYLING FOR EXHIBITIONS.HTML  */
   filter: blur(5px);
 } */
 
+.gallery_card--expand .gallery__overlay {
+  background-color: var(--glry-card-expand);
+}
+
 .gallery__card {
   position: relative;
-  background-color: #d7d7d8;
+  background-color: #f0f4ef;
   overflow: hidden;
   max-height: 450px;
   transition: var(--defult-transition);

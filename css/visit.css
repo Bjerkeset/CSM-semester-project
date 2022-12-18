@@ -5,15 +5,14 @@ body {
 
 .container {
   margin: 10px;
-  border: 2px solid;
-  background-color: lightslategray;
+  /* border: 2px solid; */
+  background-color: var(--visit-cnt-clr);
   min-width: 280px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: 10px;
-  /* padding: 5vw; */
-  /* flex-wrap: wrap; */
+  box-shadow: var(--box-shadow);
 }
 
 /* all paragraphs on the page */
@@ -46,11 +45,11 @@ body {
 .admission-details__container {
   padding: 5vw;
 }
-.admission-details__child {
-}
 .admission-details__child__h1 {
   padding-bottom: 50px;
-  font-size: var(--defult-h1-size) 3rem;
+}
+.admission-details__child__h1 h1 {
+  font-size: var(--defult-h2-size);
 }
 .admission-details__child__p {
   max-width: 750px;
@@ -60,6 +59,7 @@ body {
 /*//////////////// FORM CONTAINER ///////////////////////////// */
 .admission-booking__container {
   padding-top: 100px;
+  padding-bottom: 100px;
   margin: 1rem;
   display: flex;
   justify-content: center;
@@ -67,7 +67,6 @@ body {
 .admission-booking__form {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
 }
 .admission-form {
   display: flex;
@@ -93,12 +92,17 @@ body {
   text-align: center;
   outline: none;
   background: rgb(235, 235, 235);
-  font-weight: 600;
+  font-weight: 400;
 }
 .admission-form input:hover {
+  border: 1px solid rgb(192, 192, 192);
+  background: rgb(222, 221, 221);
 }
 .admission-form input:active {
   border: none;
+}
+.admission-form input::placeholder {
+  font-weight: 100;
 }
 .admission-form button {
   margin-top: 15px;
@@ -127,15 +131,13 @@ body {
 }
 /*/ /////////////// VISIT SECTION ///////////////////////////// */
 
-.visit__section {
-}
-
-.visit-location__container {
+.visit-location__child {
+  margin-top: 20px;
 }
 
 .visit-hours__container {
-  /* padding: 5vw; */
   max-height: 718px;
+  padding: 30px 0;
 }
 
 .visit-details--p p {
@@ -155,31 +157,19 @@ body {
   max-width: 540px;
 }
 
-.visit-details {
-}
-.visit-hours__child {
-  border-bottom: 1px solid black;
-}
-
 /* /////////STORE SECTION//////// */
+
 .store__section {
-  /* background-color: lightblue; */
   display: flex;
-  /* max-width: 300px; */
-  /* min-width: 319px; */
   flex-direction: row;
   flex-wrap: wrap;
   max-width: none;
+  justify-content: center;
 }
 
-.shop__container {
-  max-width: 500px;
-}
-
-.cafe__container {
-  max-width: 500px;
-}
-
+.cafe__container,
+.shop__container,
 .accessibility__container {
   max-width: 500px;
+  padding: 10px;
 }

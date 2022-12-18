@@ -26,7 +26,6 @@
 }
 .footer__contact-details li {
   padding: 5px;
-  font-size: 1.3rem;
   border-bottom: 1px solid black;
 }
 .footer__contact-details li:hover {
@@ -40,10 +39,11 @@
 .footer__page-links {
   border-top: 1px solid black;
 }
-.footer__all-links a {
+.footer__all-links a,
+.footer__contact-details {
   margin: 0.5rem;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: var(--ftr-link-size);
 }
 .footer__all-links a:hover {
   transform: scale(1.05);
