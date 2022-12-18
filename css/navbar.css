@@ -28,11 +28,16 @@
   z-index: 101;
   left: -100%;
 }
-
+.navbar__menu__branding {
+  visibility: hidden;
+  position: absolute;
+}
 .navbar__menu__ul.is-active {
   left: 0;
 }
-
+.navbar__menu__ul a:hover {
+  scale: 1.1;
+}
 .navbar__menu__ul a,
 li {
   color: var(--black);
@@ -76,13 +81,24 @@ li {
     flex-direction: row;
     position: relative;
   }
-  .navbar__menu__ul a:hover {
-    scale: 1.1;
-  }
+
   .navbar__menu:hover {
-    background-color: var(--black);
+    background-color: var(--navbar-clr);
   }
   .navbar__menu:hover .navbar__menu__ul a li {
     color: white;
+  }
+  .navbar__menu__branding {
+    margin-right: auto;
+    position: relative;
+    visibility: visible;
+  }
+  .navbar__menu__branding img {
+    width: 70px;
+    height: auto;
+    filter: brightness(0%);
+  }
+  .navbar__menu:hover .navbar__menu__branding img {
+    filter: brightness(100%);
   }
 }

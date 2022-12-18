@@ -68,12 +68,12 @@ const fadeInObserver = new IntersectionObserver((entries) => {
         if (entry.isIntersecting){
             entry.target.classList.add("fadein");
         } else {
-            entry.target.classList.remove("fadein");
-        }
+             entry.target.classList.remove("fadein");
+             }
     });
 });
 
-const zeroOpacityElements = document.querySelectorAll(".intro-text")
+const zeroOpacityElements = document.querySelectorAll(".intro__item")
 zeroOpacityElements.forEach((el) => fadeInObserver.observe(el));
 
 

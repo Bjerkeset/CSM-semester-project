@@ -4,14 +4,15 @@ body {
 }
 
 .container {
-  margin: 1rem;
+  margin: 10px;
   border: 2px solid;
   background-color: lightslategray;
   min-width: 280px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5vw;
+  border-radius: 10px;
+  /* padding: 5vw; */
   /* flex-wrap: wrap; */
 }
 
@@ -20,8 +21,12 @@ body {
   font-size: var(--defult-p-size);
 }
 /* all h2 and h1's on the page */
-.visit-h2 {
-  font-size: 3rem;
+.visit__h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1vw;
 }
 .visit__main {
   display: flex;
@@ -30,13 +35,13 @@ body {
 }
 .section {
   margin-top: calc(50px + 3vw);
-  min-width: 319px;
+  min-width: 300px;
+  max-width: 750px;
 }
 .admission__section {
   display: flex;
   flex-direction: column;
   width: 40vw;
-  border: 2px solid;
 }
 .admission-details__container {
   padding: 5vw;
@@ -52,7 +57,7 @@ body {
   font-size: var(--defult-p-size);
 }
 
-/* form */
+/*//////////////// FORM CONTAINER ///////////////////////////// */
 .admission-booking__container {
   padding-top: 100px;
   margin: 1rem;
@@ -62,31 +67,99 @@ body {
 .admission-booking__form {
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
 }
-.admission-form,
+.admission-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.admission-form form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
 .admission-form input {
   display: flex;
+  margin-top: 10px;
+  align-items: center;
   flex-direction: column;
-  width: 250px;
-  height: 75px;
+  justify-content: center;
+  width: calc(150px + 7vw);
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+  background: rgb(235, 235, 235);
+  font-weight: 600;
 }
-/*//////////////// visit section ///////////////////////////// */
+.admission-form input:hover {
+}
+.admission-form input:active {
+  border: none;
+}
+.admission-form button {
+  margin-top: 15px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+}
+.admission-form button:hover {
+  background-color: lightblue;
+  border: 1px solid rgb(193, 189, 189);
+}
+.admission-form button:active {
+  background-color: var(--btn-active);
+}
+#subscribe {
+  margin-top: 0;
+  height: 15px;
+}
+
+.admission-form label {
+  margin: 30px 0 10px 0;
+}
+
+.admission-form button {
+  width: 150px;
+}
+/*/ /////////////// VISIT SECTION ///////////////////////////// */
 
 .visit__section {
-  border: 2px solid;
-  width: 50vw;
 }
-
 
 .visit-location__container {
 }
 
 .visit-hours__container {
+  /* padding: 5vw; */
+  max-height: 718px;
+}
+
+.visit-details--p p {
+  padding: 0 5vw 2vw 5vw;
+}
+
+.visit-details--map {
+  display: flex;
+  justify-content: center;
+}
+.visit-details--map iframe {
+  padding: 40px 0 20px 0;
+  width: 70vw;
+  min-width: 270px;
+  height: 30vw;
+  min-height: 400px;
+  max-width: 540px;
 }
 
 .visit-details {
 }
-
+.visit-hours__child {
+  border-bottom: 1px solid black;
+}
 
 /* /////////STORE SECTION//////// */
 .store__section {
@@ -96,6 +169,7 @@ body {
   /* min-width: 319px; */
   flex-direction: row;
   flex-wrap: wrap;
+  max-width: none;
 }
 
 .shop__container {

@@ -20,8 +20,10 @@
     <header>
         <div class="navbar__container">
             <nav class="navbar__menu">
-                <a class="navbar__menu__branding" href=""><img src="" alt=""></a>
                 <ul class="navbar__menu__ul">
+                    <a class="navbar__menu__branding" href="./index.html">
+                        <img class="navbar__menu__branding--img" src="./images/png2/logo-no-background.png" alt="navbar brand">
+                    </a>
                     <a href="./index.html"><li>Home</li></a>
                     <a href="./explore.html"><li>Explore</li></a>
                     <a href="./exhibitions.html"><li>Exhibition</li></a>
@@ -41,7 +43,7 @@
             <div class="admission-details__container container">
                 <div class="admission-details__child">
                     <div class="admission-details__child__h1 visit__h2">
-                    <h1>Admission</h1>
+                        <h1>Admission</h1>
                     </div>
                     <div class="admission-details__child__p visit__p">
                         <p>The entrance is free for all. There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and include a handy printed guide of the museum. If you would like to organise a guided tour for your group of 6 or more people, please contact us to arrange the tour.</p>
@@ -53,11 +55,17 @@
                     <div class="admission-booking__form__h2 visit__h2">
                         <h2>Book a Tour</h2>
                     </div>
-                    <form class="admission-form" action="">
-                        <input type="text">
-                        <input type="text">
-                        <button>Book Now</button>                           
-                    </form>
+                    <div class="admission-form">
+                        <form class="" action="">
+                            <input type="text" name="name" id="name" placeholder="Name" required>
+                            <input type="tel" name="tel" id="tel" placeholder="Phone Number" required>
+                            <input type="email" name="v-email" id="v-email" placeholder="Email" required>
+                            <input type="number" name="Participants" id="Participants" placeholder="Number Of Participants" required>
+                            <label for="subscribe"> Agree to join our newsletter</label>
+                            <input type="checkbox" name="subscribe" id="subscribe">
+                            <button>Book Now</button>                           
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -68,41 +76,30 @@
                         <h2>Visit</h2>
                     </div>
                     <div class="visit-location__child visit-location__child--location">
-                        <div class="visit-details visit-details--one visit__p">
+                        <div class="visit-details visit-details--p visit__p">
                             <p>The museum is located at Møllerparken 4 in Oslo</p>
                         </div>
-                        <div class="visit-details visit-details--one visit__p">
-                            <p>Just 5 minutes from Alexsander Kjellands Plass </p>
+                        <div class="visit-details visit-details--map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.126421482154!2d10.753760816096626!3d59.93004438187304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e6c3dab4a69%3A0x443b53e075a787a9!2sM%C3%B8lleparken%204%2C%200459%20Oslo!5e0!3m2!1sno!2sno!4v1671228038643!5m2!1sno!2sno"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                        <div class="visit-details visit-details--one visit__p">
-                            <!-- <div class="mapouter"><div class="gmap_canvas">
-                                <iframe width="319" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=M%C3%B8llerparken%204&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                                <a href="https://123movies-to.org">123movies</a>
-                                <br><style>.mapouter{position:relative;text-align:right;height:350px;width:319px;}</style>
-                                <a href="https://www.embedgooglemap.net">wordpress add google map</a>
-                                <style>.gmap_canvas {overflow:hidden;background:none!important;height:350px;width:319px;}</style>
-                            </div> -->
-                        </div>
-                        </div>
-                        <div class="visit-details visit-details--one visit__p">
-                            
                         </div>
                     </div>
                 </div>
             </div>
             <div class="visit-hours__container container">
                 <div class="visit-hours__child visit-hours__child--h2 visit__h2">
-                    <h2>Hours</h2>
+                    <h2>Opening Hours</h2>
                 </div>
                 <table class="visit-hours__child visit-hours__child--table">
-                    <tr><th>Sunday</th><td>Closed</td></tr>
-                    <tr><th>Monday</th><td>9am - 2pm</td><td>3pm - 7pm</td></tr>
-                    <tr><th>Tuesday</th><td>9am - 2pm</td><td>3pm - 7pm</td></tr>
-                    <tr><th>Wednesday</th><td>9am - 2pm</td><td>3pm - 7pm</td></tr>
-                    <tr><th>Thursday</th><td>9am - 2pm</td><td>3pm - 7pm</td></tr>
+                    <tr><th>Monday</th><td>Closed</td>
+                    <tr><th>Tuesday</th><td>10am - 4pm</td>
+                    <tr><th>Wednesday</th><td>10am - 4pm</td>
+                    <tr><th>Thursday</th><td>10am - 4pm</td>
+                    <tr><th>Thursday</th><td>10am - 7pm</td>
+                    <tr><th>Sunday</th><td>9am - 13pm</td>
                 </table> 
             </div>
-        </section>
+        </section> 
         <section class="store__section section">
             <div class="shop__container container">
                 <div class="shop__container--h2 visit__h2">
@@ -128,7 +125,51 @@
                     <p>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.</p>
                 </div>
             </div>
-        </section>
+        </section> 
     </main>
+    <footer>
+        <div class="footer__container">
+            <div class="footer__top__container">
+                <div>
+                    <h2>Navigation</h2>
+                    <ul class="footer__page-links footer__all-links">
+                    <a href="./index.html"><li>Home</li></a>
+                    <a href="./explore.html"><li>Explore</li></a>
+                    <a href="./exhibitions.html"><li>Exhibitions</li></a>
+                    <a href="./special-events.html"><li>Special Events</li></a>
+                    <a href="./visit.html"><li>Visit</li></a>
+                </ul>
+                </div>
+                <div class="footer__links-and-newsletter__container">
+                    <ul class=" footer__sosial-links footer__all-links">
+                        <a href="https://twitter.com/home"><li><i class="fa-brands fa-twitter"></i></li></a>
+                        <a href="https://www.facebook.com/"><li><i class="fa-brands fa-facebook"></i></li></a>
+                        <a href="https://www.youtube.com/"><li><i class="fa-brands fa-youtube"></i></li></a>
+                        <a href="https://www.tiktok.com/tag/tictioc"><li><i class="fa-brands fa-tiktok"></i></li></a>
+                        <a href="https://www.instagram.com/"><li><i class="fa-brands fa-square-instagram"></i></li></a>
+                    </ul>
+                    <div class="footer__newsletter">
+                        <form action="#">
+                            <label for="email">Join our Newsfeed</label>
+                            <input type="email" id="email" name="email--newsfeed" placeholder="Email" required>
+                            <input type="submit" id="submit" name="submit--newsfeed" value="Join" >
+                        </form>
+                    </div>
+                </div>
+                <ul class="footer__contact-details">
+                    <li><a href="tel:0047 90645718"><i class="fa-solid fa-phone"></i> +47 543 23 563 </a></li>
+                    <li><a href="https://www.google.com/maps?q=m%C3%B8lleparken+4&sxsrf=ALiCzsZm4VwpzZvOg9GrNCYRmF1z_-wLUA:1670319878543&iflsig=AJiK0e8AAAAAY48dFtjR8mpHtFGbGQNS6E3aDfBdt2TM&gs_lcp=Cgdnd3Mtd2l6EAMYADIHCCMQsAIQJzIHCAAQgAQQDTIHCAAQgAQQDTIHCAAQgAQQDTIHCAAQgAQQDTIHCAAQgAQQDTIHCAAQgAQQDTIHCAAQgAQQDTIHCAAQgAQQDTINCC4QgAQQxwEQrwEQDToECCMQJzoICAAQgAQQsQM6CwguELEDEIMBENQCOhEILhCABBCxAxCDARDHARDRAzoLCAAQgAQQsQMQgwE6BQguEIAEOgUIABCABDoLCC4QgAQQxwEQrwE6DgguELEDEIMBEMcBENEDOgsILhCvARDHARCABFAAWJYTYPcmaABwAHgAgAFwiAHyBpIBAzkuMZgBAKABAQ&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjt04-82uT7AhVFR_EDHaihDecQ_AUoAXoECAIQAw"><i class="fa-solid fa-building-columns"></i> Mølleparken 4 0459 Oslo</a></li>
+                    <li> <a href="mailto: contact@CSM.com"><i class="fa-solid fa-envelope"></i> contact@CSM.com</a></li>
+                </ul>
+            </div>
+            <div class="footer__low__container">
+                <div class="footer__copyright">
+                    <h2>
+                        ©copyright™
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

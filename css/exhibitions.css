@@ -6,7 +6,7 @@ AND MAIN STYLING FOR EXHIBITIONS.HTML  */
 }
 
 .title__section {
-  padding: 10vw 0 5vw 0;
+  padding: 1vw 0 5vw 0;
 }
 
 .title__image__container {
@@ -16,6 +16,15 @@ AND MAIN STYLING FOR EXHIBITIONS.HTML  */
   background-position: top;
   background-attachment: fixed;
   background-repeat: no-repeat;
+}
+.title__logo {
+  display: flex;
+  justify-content: center;
+}
+.title__logo--img {
+  height: auto;
+  width: 30vw;
+  filter: brightness(85%);
 }
 .title__h1__container {
   padding-top: 5vw;
@@ -66,6 +75,10 @@ AND MAIN STYLING FOR EXHIBITIONS.HTML  */
     grid-row: span 6;
   }
 }
+
+/* .gallery_card--expand .gallery__section {
+  filter: blur(5px);
+} */
 
 .gallery__card {
   position: relative;

@@ -2,6 +2,7 @@
   display: flex;
   background-color: var(--footer-clr);
   flex-direction: column;
+  margin-top: 200px;
 }
 .footer__top__container {
   display: flex;
@@ -87,6 +88,7 @@
   font-weight: 600;
 }
 .footer__copyright {
+  background-color: var(--footer-low-clr);
   display: flex;
   justify-content: center;
 }

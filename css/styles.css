@@ -3,13 +3,15 @@
   /* font-family: ; */
   --defult-p-size: min(max(calc(0.8rem + 1vw)), 30px);
   --defult-line-height: min(max(calc(1rem + 1.5vw)), 3rem);
-  --defult-h2-size: min(max(calc(1.5rem + 1vw)), 64px);
+  --defult-h2-size: min(max(calc(1.2rem + 1vw)), 64px);
   --defult-h1-size: calc(1.2rem + 2vw);
   --defult-p-style: #000;
   --defult-a-size: calc(1rem + 1vw);
   --defult-button-size: calc(0.6rem + 1vw);
   /* COLOR VARIABLES */
-  --footer-clr: #fff;
+  --navbar-clr: #11151c;
+  --footer-clr: #d1d2d4;
+  --footer-low-clr: #d1d2d4;
   --white: #fff;
   --black: #000;
   --background-color: green;
@@ -84,39 +86,63 @@ a:visited {
   height: 100vh;
   background-color: var(--background-orange);
   justify-content: center;
-  /* gap: 10vw; */
   align-items: center;
   flex-wrap: wrap;
+  background-image: url(../images/samuel-zeller-158996-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-position: 100% 75%;
+  background-size: calc(200px + 20vw);
 }
 .hero__text {
   font-size: calc(0.5rem + 2.5vw);
+  position: absolute;
+  top: 20vh;
+  right: 20vw;
 }
 .hero__img-container {
-  background-color: lightgreen;
   box-sizing: content-box;
 }
 .hero__img {
-  width: auto;
-  min-width: 320px;
-  height: 850px;
+  width: 80vw;
+  min-width: 300px;
+  height: auto;
+  padding-right: 20vw;
   /* object-fit: contain;
   aspect-ratio: 1/2;
   mix-blend-mode: color-burn; */
+  filter: brightness(0%);
+  /* background-color: lightcoral; */
 }
+
 /* //////////////////////////////////////////////////// */
 
 .intro__item {
   position: relative;
-  background-color: #d7d7d8;
+  /* background-color: #e6beae; */
   overflow: hidden;
   max-height: 450px;
   transition: var(--defult-transition);
 }
+
+.intro__text {
+  /* font-size: var(--defult-a-size); */
+  border-radius: 5px;
+  padding: 1rem;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  /* overflow: hidden; */
+}
+.intro__text p {
+  /* background-color: rgba(211, 211, 211, 0.2); */
+  font-weight: 600;
+}
+
 @media (min-width: 860px) {
   .intro__container {
     opacity: 1;
     display: grid;
-    height: 100vw;
+    height: 2500px;
     /* grid-auto-flow: dense; */
     justify-content: center;
     width: 60vw;
@@ -124,39 +150,55 @@ a:visited {
     grid-gap: 20px;
     grid-template-columns: repeat(10, minmax(10px, 1fr));
     /* grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); */
-    grid-template-rows: repeat(auto-fill, 3vw);
+    grid-template-rows: repeat(auto-fill, 3.5vw);
     grid-auto-rows: 10px;
     grid-auto-flow: row;
   }
   .intro__text {
     font-size: clamp(14px, 1.5vw, 35px);
     background: none;
+    /* transition: all 2s; */
+    visibility: hidden;
+    opacity: 0;
+    align-items: flex-start;
+    display: flex;
+    align-items: baseline;
+    /* transform: translateX(-100%); */
   }
-  .intro__item {
-    overflow: visible;
+  .intro__image {
+    transition: all 2s;
+    visibility: hidden;
+    opacity: 0;
+    filter: blur(6px);
   }
+
+  /* .intro__text--three {
+    transform: translateX(+100%);
+  }
+  .intro__text--five {
+    transform: translateY(+100%);
+  } */
 }
+
+.intro__item {
+  overflow: visible;
+  visibility: hidden;
+  opacity: 0;
+}
+.fadein {
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  filter: blur(0px);
+
+  /* transition: opacity 4s; */
+  transform: translateX(0);
+}
+
 .intro__section {
   display: flex;
   justify-content: center;
   padding-top: 200px;
-}
-
-.intro__item {
-  /* background-color: lightsteelblue; */
-  /* box-shadow: rgba(100, 100, 111, 1) 0px 7px 29px 0px; */
-}
-.intro__text {
-  /* background-color: lightsteelblue; */
-  /* font-size: var(--defult-a-size); */
-  border-radius: 5px;
-  padding: 1rem;
-  min-height: 200px;
-  /* overflow: hidden; */
-}
-.intro__text p {
-  /* background-color: rgba(211, 211, 211, 0.2); */
-  font-weight: 600;
 }
 
 .intro__image img:hover {
@@ -251,43 +293,6 @@ a:visited {
   grid-column: span 2;
 }
 
-/* SPESIFIC TEXT GRID LAYOUT */
-/* WHAT NUMBERS MEAN: row-start / colum-start / row-end / colum-end */
-
-/* .intro__text--one {
-  grid-area: 1 / 1 / 1 / 11;
-}
-.intro__text--two {
-  grid-area: 6 / 5 / 8 / 11;
-}
-.intro__text--three {
-  grid-area: 8 / 1 / 10 / 8;
-}
-.intro__text--four {
-  grid-area: 15 / 1 / 15 / 7;
-}
-.intro__text--five {
-  grid-area: 17 / 4 / 19 / 11;
-} */
-
-/* SPESIFIC IMAGE GRID LAYOUT */
-/* .intro__image--one {
-  grid-area: 2 / 1 / 5 / 5;
-}
-.intro__image--two {
-  grid-area: 5 / 1 / 8 / 5;
-}
-.intro__image--three {
-  grid-area: 2 / 5 / 6 / 11;
-}
-.intro__image--four {
-  grid-area: 8 / 8 / 12 / 11;
-}
-.intro__image--five {
-}
-.intro__image--one {
-} */
-
 /* //////////////////////////////////////////////////// */
 
 .page-nav__section {
@@ -316,9 +321,14 @@ a:visited {
   background-blend-mode: multiply;
   transition: var(--defult-transition);
   color: var(--white);
+  border: 4px solid black;
+  backdrop-filter: blur(50px);
 }
 .page-nav__card h2 {
   font-size: var(--defult-h2-size);
+  border-radius: 25px;
+  backdrop-filter: blur(2px);
+  padding: 10px;
 }
 .page-nav__card:hover {
   scale: 1.05;
@@ -339,20 +349,6 @@ a:visited {
   background-image: var(--homepage-card-gradient),
     url(../images/andrew-ruiz-348421.jpg);
 }
-
-/* .fadein {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  font-size: 1.5rem;
-}
-
-.fadein p {
-  max-width: 60vw;
-} */
 
 .homepage__section--wrap-inner {
   display: flex;

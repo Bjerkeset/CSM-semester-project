@@ -13,14 +13,15 @@
   }
   .gallery_card--expand {
     grid-column: span 6;
-    grid-row: span 6;
+    grid-row: span 10;
   }
 }
-
 .body--explore {
   background-color: #c9c9ee;
 }
-
+.title__logo--img {
+  filter: brightness(20%);
+}
 .gallery_card--expand .overlay__CTA p {
   visibility: hidden;
   position: absolute;
@@ -96,8 +97,24 @@
   max-height: 100%;
   object-fit: cover;
   object-position: 50% 50%;
+  transition: all 2s;
 }
+/* 
+.gallery_card--expand .internal-gallery__child img:hover {
+  grid-column: span 10;
+  grid-row: span 6;
+  position: absolute;
+  z-index: 101;
+  object-fit: contain;
+  overflow: hidden;
+  /* grid-area: 1 / 1 / 6 / 10; */
 
 .gallery_card--expand .gallery__overlay {
-  background-color: grey;
+  background-color: #8ea4d2;
+}
+
+.gallery_card--expand {
+  height: calc(100vh + 500px);
+  /* min-height: 1000px; */
+  max-height: 2000px;
 }

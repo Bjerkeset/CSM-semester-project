@@ -8,8 +8,9 @@
     <title>Special Events</title>
     <script defer src="script.js"></script>
     <!-- LINK FOR MAIN STYLING -->
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="./css/styles.css">¨
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/exhibitions.css">
     <!-- LINK FOR PAGE SPECIFIC STYLING -->
     <link rel="stylesheet" href="./css/special-events.css">
@@ -18,8 +19,10 @@
     <header>
         <div class="navbar__container">
             <nav class="navbar__menu">
-                <a class="navbar__menu__branding" href=""><img src="" alt=""></a>
                 <ul class="navbar__menu__ul">
+                    <a class="navbar__menu__branding" href="./index.html">
+                        <img class="navbar__menu__branding--img" src="./images/png2/logo-no-background.png" alt="navbar brand">
+                    </a>
                     <a href="./index.html"><li>Home</li></a>
                     <a href="./explore.html"><li>Explore</li></a>
                     <a href="./exhibitions.html"><li>Exhibition</li></a>
@@ -36,6 +39,9 @@
     </header>
     <main>
         <section class="title__section">
+            <div class="title__logo">
+                <img class="title__logo--img" src="./images/png2/logo-no-background.png" alt="">
+            </div>
             <div class="title__image__container title__image__container--special-events"></div>
             <div class="title__h1__container">
                 <h1>Special Events</h1>
@@ -87,5 +93,49 @@
             </div>
         </section>
     </main>
+    <footer>
+        <div class="footer__container">
+            <div class="footer__top__container">
+                <div>
+                    <h2>Navigation</h2>
+                    <ul class="footer__page-links footer__all-links">
+                    <a href="./index.html"><li>Home</li></a>
+                    <a href="./explore.html"><li>Explore</li></a>
+                    <a href="./exhibitions.html"><li>Exhibitions</li></a>
+                    <a href="./special-events.html"><li>Special Events</li></a>
+                    <a href="./visit.html"><li>Visit</li></a>
+                </ul>
+                </div>
+                <div class="footer__links-and-newsletter__container">
+                    <ul class=" footer__sosial-links footer__all-links">
+                        <a href="https://twitter.com/home"><li><i class="fa-brands fa-twitter"></i></li></a>
+                        <a href="https://www.facebook.com/"><li><i class="fa-brands fa-facebook"></i></li></a>
+                        <a href="https://www.youtube.com/"><li><i class="fa-brands fa-youtube"></i></li></a>
+                        <a href="https://www.tiktok.com/tag/tictioc"><li><i class="fa-brands fa-tiktok"></i></li></a>
+                        <a href="https://www.instagram.com/"><li><i class="fa-brands fa-square-instagram"></i></li></a>
+                    </ul>
+                    <div class="footer__newsletter">
+                        <form action="#">
+                            <label for="email">Join our Newsfeed</label>
+                            <input type="email" id="email" name="email--newsfeed" placeholder="Email" required>
+                            <input type="submit" id="submit" name="submit--newsfeed" value="Join" >
+                        </form>
+                    </div>
+                </div>
+                <ul class="footer__contact-details">
+                    <li><a href="tel:0047 90645718"><i class="fa-solid fa-phone"></i> +47 543 23 563 </a></li>
+                    <li><a href="https://www.google.com/maps?q=m%C3%B8lleparken+4&sxsrf=ALiCzsZm4VwpzZvOg9GrNCYRmF1z_-wLUA:1670319878543&iflsig=AJiK0e8AAAAAY48dFtjR8mpHtFGbGQNS6E3aDfBdt2TM&gs_lcp=Cgdnd3Mtd2l6EAMYADIHCCMQsAIQJzIHCAAQgAQQDTIHCAAQgAQQDTIHCAAQgAQQDTIHCAAQgAQQDTIHCAAQgAQQDTIHCAAQgAQQDTIHCAAQgAQQDTIHCAAQgAQQDTINCC4QgAQQxwEQrwEQDToECCMQJzoICAAQgAQQsQM6CwguELEDEIMBENQCOhEILhCABBCxAxCDARDHARDRAzoLCAAQgAQQsQMQgwE6BQguEIAEOgUIABCABDoLCC4QgAQQxwEQrwE6DgguELEDEIMBEMcBENEDOgsILhCvARDHARCABFAAWJYTYPcmaABwAHgAgAFwiAHyBpIBAzkuMZgBAKABAQ&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjt04-82uT7AhVFR_EDHaihDecQ_AUoAXoECAIQAw"><i class="fa-solid fa-building-columns"></i> Mølleparken 4 0459 Oslo</a></li>
+                    <li> <a href="mailto: contact@CSM.com"><i class="fa-solid fa-envelope"></i> contact@CSM.com</a></li>
+                </ul>
+            </div>
+            <div class="footer__low__container">
+                <div class="footer__copyright">
+                    <h2>
+                        ©copyright™
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
